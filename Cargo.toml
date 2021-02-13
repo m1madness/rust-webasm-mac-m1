@@ -11,7 +11,7 @@ default = ["console_error_panic_hook"]
 
 [dependencies]
 cfg-if = "1.0.0"
-wasm-bindgen = "0.2"
+wasm-bindgen = "0.2.70"
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
@@ -21,14 +21,14 @@ console_error_panic_hook = { version = "0.1.1", optional = true }
 [package.metadata.wasm-pack.profile.release]
 wasm-opt = false
 [dev-dependencies]
-wasm-bindgen-test = "0.3"
+wasm-bindgen-test = "0.3.10"
 
 [dependencies.web-sys]
-version = "0.3"
+version = "0.3.47"
 features = [
   "console",
 ]
 
-# [profile.release]
-# opt-level = 'z'
-# lto = true
+[profile.release]
+ opt-level = 'z'
+ lto = true
