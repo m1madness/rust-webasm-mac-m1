@@ -23,3 +23,7 @@ Quick c&p: 'wasm-pack build && cd www && npm i && npm start'
 3. install the build rust package 'npm i'
 4. Start with 'npm start'
 5. Open browser at: 'http://localhost:8080'
+
+## Docker
+
+- 'docker build . -t game-of-life && docker run -it game-of-life'

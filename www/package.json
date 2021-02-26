@@ -4,7 +4,8 @@
   "description": "create an app to consume rust-generated wasm packages",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "",
+    "start:dev": "webpack-dev-server --host=0.0.0.0 --port 8080"
   },
   "repository": {
     "type": "git",
